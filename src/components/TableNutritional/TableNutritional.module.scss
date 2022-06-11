@@ -1,0 +1,14 @@
+@import '../../sass/lib/variables';
+
+.info {
+  text-align: end;
+  display: grid;
+  justify-content: center;
+  color: $Color_Brand;
+  & li:nth-child(odd) {
+    background-color: $Color_Light_Gray;
+  }
+  & li span:last-child {
+    margin-left: 2rem;
+  }
+}

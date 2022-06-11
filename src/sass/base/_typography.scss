@@ -10,13 +10,3 @@
     @include headingStyle();
   }
 }
-
-// TYPOGRAFÍA
-p,
-span,
-ol,
-ul {
-  line-height: $Base_Lineheight;
-  font-weight: $Base_Fontweight;
-  font-size: $Base_Fontsize;
-}
