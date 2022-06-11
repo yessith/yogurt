@@ -1,0 +1,73 @@
+@import '../../sass/lib/mixins';
+@import '../../sass/components/buttons';
+
+.hero {
+  position: relative;
+  background: linear-gradient(to bottom, $Color_Light_Pink, $Color_Dark_Pink);
+}
+
+.container {
+  @include max-width;
+  padding-top: 10rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  & div.yogurt {
+    width: 100%;
+    @include flexCenter;
+    & figure {
+      width: 70%;
+      margin-left: 2rem;
+    }
+  }
+}
+
+.content {
+  display: grid;
+  gap: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.head {
+  display: grid;
+  gap: 2rem;
+  max-width: 400px;
+  & h1 {
+    color: $Color_Brand;
+  }
+}
+
+.select {
+  @include flexCenter(space-between);
+  & span:first-child {
+    border: none;
+    padding: initial;
+  }
+  & span:nth-child(2) {
+    background-color: $Color_Dark_Pink-2;
+    border: none;
+  }
+  & span {
+    border-radius: 1rem;
+    border: 1px solid $Color_Gray;
+    padding: 0 0.7rem;
+  }
+}
+
+.description {
+  display: grid;
+  gap: 2rem;
+  & button {
+    @extend %btn;
+  }
+}
+
+.stamp {
+  @include flexCenter;
+  gap: 3rem;
+  & img {
+    width: 80px;
+    height: auto;
+  }
+}

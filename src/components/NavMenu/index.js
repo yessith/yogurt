@@ -28,7 +28,7 @@ export function NavMenu() {
           <img src={youtube} alt='youtube logo' />
         </div>
       </nav>
-      <button onClick={showMenu} className={styles.dropdown} id='dropdown'>
+      <button onClick={showMenu} className={styles.dropdown}>
         <div className={styles.burger}>
           <span className={`${styles['burger--line']} ${active ? styles.active : ''}`}></span>
         </div>
