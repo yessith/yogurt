@@ -1,7 +1,9 @@
+import { Header } from 'components/Header'
+
 export function App() {
   return (
     <>
-      <h1>hola</h1>
+      <Header />
     </>
   )
 }

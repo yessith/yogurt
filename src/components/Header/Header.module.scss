@@ -1,0 +1,18 @@
+@import '../../sass/lib/mixins';
+
+.vitalineaHead {
+  width: 100%;
+  position: relative;
+  background: linear-gradient(to bottom, $Color_White, $Color_Light);
+}
+
+.container {
+  height: 80px;
+  @include max-width;
+  @include flexCenter(space-between);
+}
+
+.logo {
+  padding-left: 1rem;
+  @include flexCenter;
+}

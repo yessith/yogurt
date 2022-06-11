@@ -1,0 +1,106 @@
+@import '../../sass/lib/mixins';
+@import '../../sass/lib/mediaqueries';
+
+.container {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+  top: 80px;
+  left: -100%;
+  z-index: 1;
+  transition: 0.6s;
+  background: linear-gradient(to bottom, $Color_White, $Color_Light);
+}
+
+.list {
+  height: 80%;
+  @include flexCenter(space-around);
+  flex-direction: column;
+  & a {
+    color: $Color_Black;
+  }
+}
+
+.show {
+  left: 0;
+}
+
+.socialMedia {
+  @include flexCenter(space-evenly);
+  gap: 1rem;
+  & img {
+    width: 32px;
+  }
+}
+
+.dropdown {
+  height: 40px;
+  width: 60px;
+  padding-right: 1rem;
+  padding-left: 1.9rem;
+}
+
+.burger {
+  position: relative;
+  padding: 10px 0;
+}
+
+.burger--line,
+.burger--line::before,
+.burger--line::after {
+  width: 100%;
+  height: 3px;
+  display: block;
+  border-radius: 20px;
+  background-color: $Color_Line_Menu;
+  transition: 0.6s;
+}
+
+.burger--line::before {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.burger--line::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+}
+
+.active {
+  transform: rotate(45deg);
+}
+
+.active::before {
+  transform: rotate(90deg);
+}
+
+.active::after {
+  display: none;
+}
+
+@include tablet {
+  .container {
+    transition: none;
+    background-color: transparent;
+    position: initial;
+    height: 100%;
+    width: 70%;
+    @include flexCenter(space-evenly);
+  }
+  .list {
+    width: 70%;
+    height: initial;
+    flex-direction: row;
+  }
+  .dropdown {
+    display: none;
+  }
+}
+
+@include desktop {
+  .container {
+    width: 50%;
+  }
+}
