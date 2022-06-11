@@ -1,0 +1,16 @@
+@import '../lib/variables';
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+
+%btn {
+  height: 40px;
+  width: 335px;
+  font-weight: $Base_Fontweight;
+  color: $Color_White;
+  background-color: $Color_Brand;
+  &:hover {
+    background-color: $Color_White;
+    color: $Color_Brand;
+  }
+}

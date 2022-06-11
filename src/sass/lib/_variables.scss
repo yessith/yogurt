@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,500;1,300&display=swap');
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+
+// Brand colors
+$Color_Brand: #78246d;
+$Color_Dark_Pink: #f9e6e6;
+$Color_Light_Pink: #ebacac;
+$Color_White: #ffffff;
+$Color_Black: #000000;
+
+/*------------------------------------*\
+    $FONTS
+\*------------------------------------*/
+
+// Fonts Definitions
+$Base_Font: 'Open Sans', sans-serif;
+$Base_Fontweight: 300;
+$Title_Fontweight: 500;
+$Base_Fontsize: 1.6rem;
+$Fontsize_Title: 2;
+
+$heading-size: (
+  'h1': $Fontsize_Title,
+  'h2': $Fontsize_Title - 0.2,
+  'h3': $Fontsize_Title - 0.5,
+);
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+// Values Constant
+$Base_Lineheight: 1.5;
+$Page_Maxwidth: 1200px;
+$Border_Radius: 1rem;
+$Hover_Transition: 0.3s;
+$Animationtime: 0.8s;

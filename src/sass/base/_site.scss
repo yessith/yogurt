@@ -1,0 +1,46 @@
+/*------------------------------------*\
+    $SITIO
+\*------------------------------------*/
+
+html {
+  font-size: 62.5%;
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-family: $Base_Font;
+  font-size: $Base_Fontsize;
+  font-weight: $Base_Fontweight;
+  color: $Color_Black;
+  background-color: $Color_White;
+  line-height: $Base_Lineheight;
+  text-rendering: optimizeLegibility;
+}
+
+a,
+button,
+img,
+i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

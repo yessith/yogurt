@@ -1,0 +1,20 @@
+/*------------------------------------*\
+    $MIXINS
+\*------------------------------------*/
+
+@mixin flexCenter($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin headingStyle($fontweight: $Base_Fontweight, $lineheight: $Base_Lineheight) {
+  font-weight: $fontweight;
+  line-height: $lineheight;
+}
+
+@mixin max-width($max-width: $Page_Maxwidth) {
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+}
