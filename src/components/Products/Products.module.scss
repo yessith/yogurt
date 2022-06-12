@@ -1,0 +1,36 @@
+@import '../../sass/lib/mixins';
+@import '../../sass/lib/mediaqueries';
+
+.box {
+  background: url('../../assets/bg-familia-vitalinea@3x.png') no-repeat;
+  height: 500px;
+}
+
+.container {
+  height: 100%;
+  @include max-width;
+  display: grid;
+  gap: 2rem;
+  margin-top: 3rem;
+  padding: 0 1rem;
+  overflow-x: scroll;
+  & h2 {
+    color: $Color_Brand;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+@include tablet {
+  .container {
+    overflow-x: initial;
+  }
+}

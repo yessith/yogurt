@@ -1,0 +1,13 @@
+@import '../../sass/lib/variables';
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  color: $Color_Brand;
+  & figure {
+    width: 200px;
+    margin-bottom: 1rem;
+  }
+}
