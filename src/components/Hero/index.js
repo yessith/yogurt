@@ -1,6 +1,7 @@
 import yogurt from 'assets/img-bote-fresa@2x.png'
 import kcal from 'assets/img-100-kcal.png'
 import sello from 'assets/img-sello-avalado@2x.png'
+import arrow from 'assets/flecha@3x.png'
 import styles from './Hero.module.scss'
 
 export function Hero() {
@@ -35,6 +36,9 @@ export function Hero() {
             <img src={kcal} alt='Kcal' />
           </div>
         </article>
+      </div>
+      <div className={styles.arrow}>
+        <img src={arrow} alt='flecha' />
       </div>
     </section>
   )
