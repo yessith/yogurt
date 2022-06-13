@@ -3,7 +3,7 @@
 
 .container {
   display: grid;
-  gap: 2rem;
+  gap: 4rem;
   @include max-width;
   padding: 0 1rem;
   margin-top: 10rem;
