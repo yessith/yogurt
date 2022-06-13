@@ -95,6 +95,22 @@
   }
 }
 
+.fresaLeft {
+  position: absolute;
+  width: 100px;
+  height: 250px;
+  bottom: -7rem;
+  display: none;
+}
+.fresaRight {
+  position: absolute;
+  width: 100px;
+  height: 250px;
+  bottom: -7rem;
+  display: none;
+  right: 0;
+}
+
 @include tablet {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -109,5 +125,9 @@
   }
   .stamp {
     justify-content: start;
+  }
+  .fresaLeft,
+  .fresaRight {
+    display: block;
   }
 }

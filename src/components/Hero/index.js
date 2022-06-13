@@ -2,11 +2,14 @@ import yogurt from 'assets/img-bote-fresa@2x.png'
 import kcal from 'assets/img-100-kcal.png'
 import sello from 'assets/img-sello-avalado@2x.png'
 import arrow from 'assets/flecha@3x.png'
+import fresaLeft from 'assets/img-fresas-4@2x.png'
+import fresaRight from 'assets/img-fresas-3@2x.png'
 import styles from './Hero.module.scss'
 
 export function Hero() {
   return (
     <section className={styles.hero}>
+      <img className={styles.fresaLeft} src={fresaLeft} alt='fresa' />
       <div className={styles.container}>
         <div className={styles.yogurt}>
           <figure>
@@ -40,6 +43,7 @@ export function Hero() {
       <div className={styles.arrow}>
         <img src={arrow} alt='flecha' />
       </div>
+      <img className={styles.fresaRight} src={fresaRight} alt='fresa' />
     </section>
   )
 }
