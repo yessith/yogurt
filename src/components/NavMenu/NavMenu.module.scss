@@ -9,7 +9,7 @@
   left: -100%;
   z-index: 1;
   transition: 0.6s;
-  background: linear-gradient(to bottom, $Color_White, $Color_Light);
+  background-color: $Color_White;
 }
 
 .list {

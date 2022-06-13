@@ -2,7 +2,8 @@
 
 .vitalineaHead {
   width: 100%;
-  position: relative;
+  position: absolute;
+  z-index: 1;
   background: linear-gradient(to bottom, $Color_White, $Color_Light);
 }
 
