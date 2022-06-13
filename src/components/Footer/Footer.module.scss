@@ -19,7 +19,7 @@
   & figure:last-child {
     width: 50%;
     grid-area: 1/2/2/3;
-    justify-self: end;
+    justify-self: flex-end;
   }
 }
 
