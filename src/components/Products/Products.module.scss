@@ -4,21 +4,21 @@
 .box {
   background: url('../../assets/bg-familia-vitalinea@3x.png') no-repeat;
   height: 500px;
+  & h2 {
+    color: $Color_Brand;
+    padding-top: 2rem;
+    padding-left: 1rem;
+    font-size: 2.2rem;
+  }
 }
 
 .container {
-  height: 100%;
+  height: 90%;
   @include max-width;
   display: grid;
   gap: 2rem;
-  margin-top: 3rem;
   padding: 0 1rem;
   overflow-x: scroll;
-  & h2 {
-    color: $Color_Brand;
-    margin-top: 2rem;
-    font-size: 2.2rem;
-  }
 }
 
 .grid {
