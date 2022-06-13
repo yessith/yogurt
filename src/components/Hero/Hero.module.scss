@@ -64,6 +64,7 @@
   gap: 2rem;
   & button {
     @extend %btn;
+    justify-self: center;
   }
 }
 
@@ -122,6 +123,12 @@
   }
   .content {
     padding: 0 1rem 0 0;
+  }
+  .description {
+    & button {
+      @extend %btn;
+      justify-self: baseline;
+    }
   }
   .stamp {
     justify-content: start;
